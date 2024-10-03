@@ -21,6 +21,11 @@
     <PackageTags>LANDIS-II;Landis;Extension;wind</PackageTags>
     <Description>Landis.Extension.OriginalWind</Description>
     <PackageReleaseNotes>Landis.Extension.OriginalWind</PackageReleaseNotes>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>..\..\Core-Model-v8-LINUX\build\extensions</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -28,10 +33,11 @@
   </ItemGroup>
   
   <ItemGroup>
-    <Reference Include="Landis.Library.UniversalCohorts-v1">
-    </Reference>
     <Reference Include="Landis.Landis.Library.Metadata-v2">
-      <HintPath>lib\Landis.Library.Metadata-v2.dll</HintPath>
+      <HintPath>..\..\Support-Library-Dlls-v8\Landis.Library.Metadata-v2.dll</HintPath>
+    </Reference>
+    <Reference Include="Landis.Library.UniversalCohorts-v1">
+      <HintPath>..\..\Support-Library-Dlls-v8\Landis.Library.UniversalCohorts-v1.dll</HintPath>
     </Reference>
   </ItemGroup>
   
