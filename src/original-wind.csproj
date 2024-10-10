@@ -21,6 +21,7 @@
     <PackageTags>LANDIS-II;Landis;Extension;wind</PackageTags>
     <Description>Landis.Extension.OriginalWind</Description>
     <PackageReleaseNotes>Landis.Extension.OriginalWind</PackageReleaseNotes>
+    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
 
